@@ -4,17 +4,26 @@
   "description": "Codigo base para administrar paqueteria front end",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --config ./webpack.config.js --mode development"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mariafernandahdz/diaw-2020-02.git"
   },
-  "keywords": ["node", "frontend"],
+  "keywords": [
+    "node",
+    "frontend"
+  ],
   "author": "Fernanda Hernandez <fernandahdzc@outlook.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mariafernandahdz/diaw-2020-02/issues"
   },
-  "homepage": "https://github.com/mariafernandahdz/diaw-2020-02#readme"
+  "homepage": "https://github.com/mariafernandahdz/diaw-2020-02#readme",
+  "devDependencies": {
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  }
 }
