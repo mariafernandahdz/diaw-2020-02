@@ -1,3 +1,9 @@
 //Script de FrontEnd
-console.log("Hello Modern JS / EM6 / Es2015 / Es2020");
-alert("Bienvenido al programa")
+console.log("Modern JS Working! Thanks babel...");
+let show = (message = "Saludo por defecto") =>{
+    alert(message)
+}
+
+//EJEMPLO 
+show()
+show("Mi saludo")
