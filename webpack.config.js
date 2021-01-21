@@ -1,4 +1,5 @@
 const path = require('path')
+const EslintPlugin = require('eslint-webpack-plugin')
 
 module.exports = {
     // 1. ARCHIVO DE ENTRADA INDEX
@@ -27,5 +28,6 @@ module.exports = {
                 use: ['babel-loader']
             },
         ]
-    }
+    },
+    plugins: [new EslintPlugin()]
 }
