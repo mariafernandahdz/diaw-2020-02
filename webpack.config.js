@@ -11,5 +11,21 @@ module.exports = {
     //3. FOLDER DONDE SERVIRA
     devServer:{
         contentBase: path.join(__dirname, 'dist')
+    },
+    module:{
+        rules: [
+            {
+                /*
+                LE INDICO QUE TODOS LOS ARCHIVOS JAVASCRIPT LOS VAA OPERAR
+                CON BABEL
+                // SIGNIFICAN EXPRESIONES REGULARES
+                \ SE AGREGAR ESTA SECUENCIA DE ESCAPE INDICANDO QUE TODO LO
+                QUE TERMINE CON PUNTO JS LO OPERARA EN BABEL
+                $ SIGNIFICA QUE ESTARÁ AL FINAL DE LA CADENA */
+                test: /\.(js)$/,
+                exclude: /node_modules/,
+                use: ['babel-loader']
+            },
+        ]
     }
 }
