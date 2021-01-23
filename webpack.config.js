@@ -32,7 +32,7 @@ module.exports = {
                 //SE EJECUTAN EN EL ORDEN DEL ULTIMO AL PRIMERO
                 //css-loader LEE TODOS LOS ARCHIVOS CSS Y LOS REGRESA EN UN UNICO STRING
                 //style-loader INYECTA AL HTML TODOS LOS ESTILOS
-                use: ['style-loader', 'css-loader']
+                use: ['style-loader', 'css-loader', 'postcss-loader']
             }
         ]
     },
